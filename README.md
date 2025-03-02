@@ -77,10 +77,34 @@ This project is a step-by-step tutorial for learning the Model Context Protocol 
 
 3. Follow the README instructions in each section directory.
 
+## Project Configuration
+
+This project uses modern Python tooling:
+
+- **Python 3.10+** is required
+- **pyproject.toml** for dependency management
+- **uv** for faster, more reliable package installation
+
+To set up the project with uv:
+
+```bash
+# Install uv if you don't have it
+pip install uv
+
+# Create and activate a virtual environment
+uv venv
+
+# Install dependencies
+uv pip install -e .
+
+# Install development dependencies (optional)
+uv pip install -e ".[dev]"
+```
+
 ## Requirements
 
-- Python 3.8+
-- Dependencies are listed in requirements.txt
+- Python 3.10+
+- Dependencies are listed in pyproject.toml
 
 ## License
 
