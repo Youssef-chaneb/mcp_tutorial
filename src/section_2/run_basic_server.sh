@@ -16,4 +16,4 @@ fi
 
 # Run the basic server
 echo "Starting Basic MCP Server..."
-python src/section_2/basic_server.py 
+python src/section_2/basic_server.py

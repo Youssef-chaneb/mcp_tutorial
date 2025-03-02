@@ -16,4 +16,4 @@ fi
 
 # Run the basic client
 echo "Running Basic MCP Client Tests..."
-python src/section_2/simple_client.py 
+python src/section_2/simple_client.py

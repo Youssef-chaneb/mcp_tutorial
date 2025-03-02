@@ -12,4 +12,4 @@ if [ -d ".venv" ]; then
 fi
 
 echo "Starting Weather MCP Server..."
-python src/section_2/weather_server.py 
+python src/section_2/weather_server.py

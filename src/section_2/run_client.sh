@@ -13,4 +13,4 @@ fi
 
 echo "Running Weather MCP Client Tests..."
 # Run the simple client and save output to a log file while still showing it on screen
-python src/section_2/weather_client.py 2>&1 | tee weather_client_output.log 
+python src/section_2/weather_client.py 2>&1 | tee weather_client_output.log

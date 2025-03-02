@@ -25,10 +25,10 @@ server = FastMCP("Basic MCP Server")
 async def echo(text: str) -> str:
     """
     Echo back the input text.
-    
+
     Args:
         text: The text to echo back
-        
+
     Returns:
         The same text that was provided
     """
@@ -94,11 +94,11 @@ def extract_content(response):
     """Extract content from a tool response, handling different formats."""
     if not response.content:
         return None
-        
+
     # If there's only one content item, process it normally
     if len(response.content) == 1:
         content = response.content[0].text
-        
+
         # Try to parse as JSON if it looks like JSON
         if content and (content.startswith('{') or content.startswith('[')):
             try:
@@ -106,7 +106,7 @@ def extract_content(response):
             except json.JSONDecodeError:
                 # If it's not valid JSON, return the raw text
                 return content
-        
+
         # Return raw text for non-JSON responses
         return content
     else:
@@ -128,9 +128,9 @@ try:
     # Use the exit stack to manage resources
     stdio_transport = await exit_stack.enter_async_context(stdio_client(server_params))
     client = await exit_stack.enter_async_context(ClientSession(...))
-    
+
     # Use the client...
-    
+
 finally:
     # Clean up resources
     await exit_stack.aclose()
@@ -228,4 +228,4 @@ After completing this section, you should have a good understanding of the MCP c
 
 - Section 3: Exploring Built-in Tools
 - Section 4: Loading Existing Tools
-- Section 5: Creating Custom Tools 
+- Section 5: Creating Custom Tools

@@ -75,7 +75,7 @@ Resources represent external systems or data that tools may need to access:
 
 ## Communication Flow
 
-1. **Tool Discovery**: 
+1. **Tool Discovery**:
    - Client queries server for available tools
    - Server responds with tool specifications (inputs, outputs, descriptions)
 
@@ -181,4 +181,4 @@ Tools register with servers using a schema that specifies:
 
 The MCP architecture provides a robust foundation for extending AI model capabilities through external tools. By structuring the communication between models and tools, MCP enables safe, efficient, and powerful integrations that significantly enhance what AI systems can do.
 
-In the next sections of this tutorial, you'll learn how to implement each component of this architecture and create a working MCP system. 
+In the next sections of this tutorial, you'll learn how to implement each component of this architecture and create a working MCP system.

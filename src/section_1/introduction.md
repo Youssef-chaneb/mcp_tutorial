@@ -109,4 +109,4 @@ In the following sections of this tutorial, you'll learn how to:
 4. Create custom tools
 5. Set up clients and communicate with servers
 
-By the end of this tutorial, you'll have the skills to build sophisticated MCP-based applications that extend AI capabilities with external tools. 
+By the end of this tutorial, you'll have the skills to build sophisticated MCP-based applications that extend AI capabilities with external tools.

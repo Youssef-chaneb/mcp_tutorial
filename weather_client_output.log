@@ -5,41 +5,41 @@
 2025-03-02 20:36:39,668 - __main__ - INFO - Weather Server started. Running with stdio communication.
 2025-03-02 20:36:39,679 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
 2025-03-02 20:36:39,680 - __main__ - INFO - Connected to server with tools: ['get_weather_forecast', 'get_weather_alerts']
-2025-03-02 20:36:39,680 - __main__ - INFO - 
+2025-03-02 20:36:39,680 - __main__ - INFO -
 === Testing get_weather_forecast tool ===
 2025-03-02 20:36:39,680 - __main__ - INFO - Getting weather forecast for New York for 3 days in celsius
 2025-03-02 20:36:39,681 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,681 - __main__ - INFO - Generating weather forecast for New York for 3 days in celsius
 2025-03-02 20:36:39,682 - __main__ - INFO - Weather forecast result: {'city': 'New York', 'forecast': [{'date': '2025-03-02', 'condition': 'cloudy', 'temperature': 19.2, 'temperature_unit': '°C', 'precipitation_chance': 30}, {'date': '2025-03-03', 'condition': 'cloudy', 'temperature': 13.6, 'temperature_unit': '°C', 'precipitation_chance': 35}, {'date': '2025-03-04', 'condition': 'cloudy', 'temperature': 11.5, 'temperature_unit': '°C', 'precipitation_chance': 21}]}
 2025-03-02 20:36:39,682 - __main__ - INFO - ✅ Weather forecast tool test passed!
-2025-03-02 20:36:39,682 - __main__ - INFO - 
+2025-03-02 20:36:39,682 - __main__ - INFO -
 Testing forecast with fahrenheit units
 2025-03-02 20:36:39,682 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,682 - __main__ - INFO - Generating weather forecast for New York for 1 days in fahrenheit
 2025-03-02 20:36:39,683 - __main__ - INFO - Fahrenheit forecast result: {'city': 'New York', 'forecast': [{'date': '2025-03-02', 'condition': 'partly cloudy', 'temperature': 62.3, 'temperature_unit': '°F', 'precipitation_chance': 23}]}
 2025-03-02 20:36:39,683 - __main__ - INFO - ✅ Fahrenheit units test passed!
-2025-03-02 20:36:39,683 - __main__ - INFO - 
+2025-03-02 20:36:39,683 - __main__ - INFO -
 Testing forecast with invalid city
 2025-03-02 20:36:39,684 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,684 - __main__ - INFO - Generating weather forecast for InvalidCity for 1 days in celsius
 2025-03-02 20:36:39,684 - __main__ - INFO - Invalid city result: {'error': "City 'InvalidCity' not found. Available cities: New York, London, Tokyo, Sydney, Paris, Cairo, Moscow, Rio de Janeiro"}
 2025-03-02 20:36:39,684 - __main__ - INFO - ✅ Invalid city error handling test passed!
-2025-03-02 20:36:39,684 - __main__ - INFO - 
+2025-03-02 20:36:39,684 - __main__ - INFO -
 === Testing get_weather_alerts tool ===
 2025-03-02 20:36:39,685 - __main__ - INFO - Getting weather alerts for London
 2025-03-02 20:36:39,685 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,685 - __main__ - INFO - Checking weather alerts for London
 2025-03-02 20:36:39,686 - __main__ - INFO - Weather alerts result: {'city': 'London', 'alerts': [{'severity': 'medium', 'type': 'rain', 'message': 'Heavy rain expected in London today'}]}
 2025-03-02 20:36:39,686 - __main__ - INFO - ✅ Weather alerts tool test passed!
-2025-03-02 20:36:39,686 - __main__ - INFO - 
+2025-03-02 20:36:39,686 - __main__ - INFO -
 Testing alerts with invalid city
 2025-03-02 20:36:39,686 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,686 - __main__ - INFO - Checking weather alerts for InvalidCity
 2025-03-02 20:36:39,686 - __main__ - INFO - Invalid city alerts result: {'error': "City 'InvalidCity' not found. Available cities: New York, London, Tokyo, Sydney, Paris, Cairo, Moscow, Rio de Janeiro"}
 2025-03-02 20:36:39,686 - __main__ - INFO - ✅ Invalid city error handling for alerts test passed!
-2025-03-02 20:36:39,686 - __main__ - INFO - 
+2025-03-02 20:36:39,686 - __main__ - INFO -
 === Testing weather tools with different cities ===
-2025-03-02 20:36:39,686 - __main__ - INFO - 
+2025-03-02 20:36:39,686 - __main__ - INFO -
 Testing forecast for Tokyo
 2025-03-02 20:36:39,687 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,687 - __main__ - INFO - Generating weather forecast for Tokyo for 1 days in celsius
@@ -48,7 +48,7 @@ Testing forecast for Tokyo
 2025-03-02 20:36:39,688 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,688 - __main__ - INFO - Checking weather alerts for Tokyo
 2025-03-02 20:36:39,688 - __main__ - INFO - Tokyo alerts: {'city': 'Tokyo', 'alerts': []}
-2025-03-02 20:36:39,688 - __main__ - INFO - 
+2025-03-02 20:36:39,688 - __main__ - INFO -
 Testing forecast for Cairo
 2025-03-02 20:36:39,689 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,689 - __main__ - INFO - Generating weather forecast for Cairo for 1 days in celsius
@@ -57,7 +57,7 @@ Testing forecast for Cairo
 2025-03-02 20:36:39,690 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,690 - __main__ - INFO - Checking weather alerts for Cairo
 2025-03-02 20:36:39,691 - __main__ - INFO - Cairo alerts: {'city': 'Cairo', 'alerts': [{'severity': 'medium', 'type': 'heat', 'message': 'Heat advisory in effect for Cairo'}]}
-2025-03-02 20:36:39,691 - __main__ - INFO - 
+2025-03-02 20:36:39,691 - __main__ - INFO -
 Testing forecast for Sydney
 2025-03-02 20:36:39,691 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,691 - __main__ - INFO - Generating weather forecast for Sydney for 1 days in celsius
@@ -66,7 +66,7 @@ Testing forecast for Sydney
 2025-03-02 20:36:39,692 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
 2025-03-02 20:36:39,692 - __main__ - INFO - Checking weather alerts for Sydney
 2025-03-02 20:36:39,693 - __main__ - INFO - Sydney alerts: {'city': 'Sydney', 'alerts': []}
-2025-03-02 20:36:39,693 - __main__ - INFO - 
+2025-03-02 20:36:39,693 - __main__ - INFO -
 === All weather tool tests passed! ===
 2025-03-02 20:36:39,693 - __main__ - INFO - Cleaning up resources...
 2025-03-02 20:36:39,693 - __main__ - INFO - Server shutdown complete

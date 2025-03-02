@@ -41,4 +41,4 @@ python src/section_1/hello_mcp.py
 
 ## Next Steps
 
-After completing this section, you'll be ready to explore client-server fundamentals in Section 2, where you'll set up both a server and client to establish your first working MCP system. 
+After completing this section, you'll be ready to explore client-server fundamentals in Section 2, where you'll set up both a server and client to establish your first working MCP system.
