@@ -1,0 +1,15 @@
+[uv]
+# Use the pyproject.toml file for dependencies
+use-pyproject = true
+
+# Default to creating a virtual environment in the project directory
+venv = { path = ".venv" }
+
+# Exclude common directories from being considered as Python packages
+exclude = [
+    ".git",
+    ".github",
+    ".venv",
+    "__pycache__",
+    "*.pyc",
+] 
